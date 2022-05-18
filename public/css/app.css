@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header div {
+  display: flex;
+  padding: 30px 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header div img {
+  width: 100px;
+  height: 100px;
+}
+
+header div ul {
+  display: flex;
+  list-style: none;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+header div ul li {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+header div ul #active {
+  color: rgb(0, 140, 255);
+  border-bottom: 2px solid rgb(0, 140, 255);
+}
+
