@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('app');
+
+    $dbcomics = @include "../config/comics.php";
+
+    return view('main', ["comics" => $dbcomics]);
 });

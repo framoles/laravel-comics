@@ -13,7 +13,12 @@
     <header>
         @include('./partial/header')
     </header>
-    @include('./partial/footer')
+    <main>
+        @yield('main')
+    </main>
+    <footer>
+        @include('./partial/footer')
+    </footer>
 </body>
 
 </html>
